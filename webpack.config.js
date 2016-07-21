@@ -2,7 +2,7 @@ const path = require('path');
 const webpack = require('webpack');
 const commonsPlugin = new webpack.optimize.CommonsChunkPlugin({
 	name: "common",
-	minChunks: 2	//被共同Chunks N次打包到commonsPlugin
+	minChunks: 3	//被共同Chunks N次打包到commonsPlugin
 });
 
 module.exports = {
